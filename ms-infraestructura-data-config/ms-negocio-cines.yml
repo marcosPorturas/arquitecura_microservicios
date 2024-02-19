@@ -8,3 +8,20 @@ spring:
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    
+# Server Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8879/eureka
+
+# Endpoints exposition
+management:
+  endpoints:
+    web:
+     exposure:
+       include: "*"
+     health:
+       show-details: always
