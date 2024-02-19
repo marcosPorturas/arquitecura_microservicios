@@ -1,0 +1,29 @@
+server:
+  port: 8878
+spring:
+  application:
+    name: ms-infra-config-server
+#Configuracion Local
+  profiles:
+    active: native
+  cloud:
+    config:
+      server: 
+        native:
+          searchLocations: file:///C:/Users/Marcos/proyecto_arquitectura_microservicos/arquitecura_microservicios/ms-infraestructura-data-config
+
+# Acuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,refresh"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true    

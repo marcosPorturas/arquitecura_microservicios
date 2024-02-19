@@ -1,0 +1,16 @@
+
+MS - NEGOCIO
+-------------------------------------------------
+ms-negocio-cines						8071									
+ms-negocio-peliculas						8072
+
+
+
+MS - ADMINISTRACION
+-------------------------------------------------
+ms-administracion-server-config				8888
+ms-administracion-server-registry			8889
+ms-administracion-api-gateway				8887
+
+Create APIS
+ms-infraestructura-server-config			8878

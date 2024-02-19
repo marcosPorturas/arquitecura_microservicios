@@ -1,0 +1,10 @@
+server:
+   port: 8071
+# MySql #
+# spring.jpa.hibernate.ddl-auto=update
+spring:
+  datasource: 
+    url: jdbc:mysql://localhost:3306/db_cineapp?useSSL=true
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
